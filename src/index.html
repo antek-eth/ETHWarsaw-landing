@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ETHWarsaw</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,800" rel="stylesheet">
+
+    <!-- <link rel='shortcut icon' type='image/x-icon' href='/favicon.png' /> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MVTLKMB0J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8MVTLKMB0J');
+    </script>
+
+</head>
+
+<body>
+    <div class="title-wrapper">
+        <div class="title">ETHWarsaw</div>
+    </div>
+
+    <a href="https://twitter.com/ethwarsaw" target="_blank">
+        <div class="button-wrapper" id="community">Join the community</div>
+    </a>
+    <a href="" target="_blank">
+        <div class="button-wrapper" id="sponsor">Become a sponsor</div>
+    </a>
+
+    <span class="stay-tuned">Stay tuned</span>
+    
+
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    acc[0].click();
+</script>
+
+</html>
