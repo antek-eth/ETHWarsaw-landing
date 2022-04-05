@@ -31,7 +31,9 @@
                     <img class="logo" src="./assets/logo.svg"/>
                 </a>
             </div>
-
+            <div class="hamburger-menu-wrapper" onclick="openMenu()">
+                <img src="./assets/mobile-menu.svg"/>
+            </div>
             <div class="sections-wrapper">
                 <a href="#about"><div class="section">About us</div></a>
                 <a href="#meetup"><div class="section">Meetup</div></a>
@@ -40,6 +42,24 @@
 
         </div>
 
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo-wrapper">
+                    <a href="/">
+                        <img class="logo" src="./assets/logo.svg"/>
+                    </a>
+                </div>
+                <div class="mobile-menu-close-wrapper" onclick="closeMenu()">
+                    <img class="mobile-menu-close" src="./assets/close.svg"/>
+                </div>
+            </div>
+            <div class="mobile-menu-break"></div>
+            <div class="mobile-menu-section-wrapper">
+                <a href="#about"><div class="mobile-menu-section">About us</div></a>
+                <a href="#meetup"><div class="mobile-menu-section">Meetup</div></a>
+                <a href="#contact"><div class="mobile-menu-section">Contact us</div></a>
+            </div>
+        </div>
     
         <div class="illustration-wrapper">
             <img class="illustration" src="./assets/illustration.svg"/>
@@ -131,6 +151,28 @@
         });
     }
     acc[0].click();
+</script>
+
+<script>
+    function openMenu() {
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (mobileMenu.style.display === "block") {
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+        console.log('OPEN')
+    }
+
+    function closeMenu() {
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (mobileMenu.style.display === "block") {
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+        console.log('CLOSE')
+    }
 </script>
 
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[6]='MESSAGE';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
