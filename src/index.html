@@ -31,7 +31,7 @@
                     <img class="logo" src="./assets/logo.svg"/>
                 </a>
             </div>
-            <div class="hamburger-menu-wrapper" onclick="openMenu()">
+            <div class="hamburger-menu-wrapper" id="hamburger-menu">
                 <img src="./assets/mobile-menu.svg"/>
             </div>
             <div class="sections-wrapper">
@@ -49,7 +49,7 @@
                         <img class="logo" src="./assets/logo.svg"/>
                     </a>
                 </div>
-                <div class="mobile-menu-close-wrapper" onclick="closeMenu()">
+                <div class="mobile-menu-close-wrapper" id="mobile-menu-close">
                     <img class="mobile-menu-close" src="./assets/close.svg"/>
                 </div>
             </div>
@@ -154,24 +154,15 @@
 </script>
 
 <script type='text/javascript'>
-    function openMenu() {
+    document.getElementById('mobile-menu-close').addEventListener('click', menu)
+    document.getElementById('hamburger-menu').addEventListener('click', menu)
+    function menu() {
         var mobileMenu = document.getElementById("mobile-menu");
         if (mobileMenu.style.display === "block") {
             mobileMenu.style.display = "none";
         } else {
             mobileMenu.style.display = "block";
         }
-        console.log('OPEN')
-    }
-
-    function closeMenu() {
-        var mobileMenu = document.getElementById("mobile-menu");
-        if (mobileMenu.style.display === "block") {
-            mobileMenu.style.display = "none";
-        } else {
-            mobileMenu.style.display = "block";
-        }
-        console.log('CLOSE')
     }
 </script>
 
