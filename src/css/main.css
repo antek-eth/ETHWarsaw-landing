@@ -115,31 +115,6 @@ a:active { text-decoration: none; }
   align-items: center;
 }
 
-@media screen and (max-width: 576px) {
-  .header-wrapper {
-    justify-content: space-between;
-  }
-  
-  .logo-wrapper {
-    margin-top: 8px;
-    margin-left: 30px;
-  }
-
-  .hamburger-menu-wrapper {
-    display: block;
-  }
-
-  .sections-wrapper {
-    display: none;
-  }
-
-  .mobile-menu {
-
-  }
-
-}
-
-
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -160,7 +135,6 @@ a:active { text-decoration: none; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .title-wrapper {
@@ -199,13 +173,9 @@ a:active { text-decoration: none; }
 }
 
 .buttons-section-wrapper {
-  justify-self: flex-end;
   display: flex;
+  justify-self: flex-end;
   justify-content: center;
-  
-  
-  
-  /* space-between: 16px; */
 }
 
 .buttons-wrapper {
@@ -227,7 +197,7 @@ a:active { text-decoration: none; }
   border: 2px solid #55EEC8;
   box-sizing: border-box;
   border-radius: 10px;
-  
+  background: #FFFFFF;
 }
 
 .about {
@@ -260,6 +230,7 @@ a:active { text-decoration: none; }
   width: 700px;
   margin-top: 20px;
 }
+
 
 .meetup {
   height: 310px;
@@ -410,3 +381,108 @@ a:active { text-decoration: none; }
 .bottom-illustration {
   width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+  .header-wrapper {
+    justify-content: space-between;
+  }
+  
+  .logo-wrapper {
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+
+  .hamburger-menu-wrapper {
+    display: block;
+  }
+
+  .sections-wrapper {
+    display: none;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .title-section-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .title-wrapper {
+    position: static;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .buttons-wrapper {
+    flex-direction: column;
+  }
+
+  .top-button {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .about-subtitle {
+    width: 93%;
+  }
+
+  .meetup-title {
+    margin-top: 28.5px;
+  }
+
+  .meetup-subtitle {
+    margin-top: 54px;
+    width: 90%;
+  }
+
+  .meetup-button {
+    margin-top: 10px;
+  }
+  .contact-form-wrapper {
+    padding: 0;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact {
+    /* width: 100%; */
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+
+  .contact-title {
+    margin-bottom: 54px;
+  }
+
+  .contact-illustration-wrapper {
+    display: none;
+  }
+
+  .submit-button {
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  .submit-form-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    width: 85%;
+  }
+}
+
