@@ -137,16 +137,8 @@
 </body>
 
 <script type='text/javascript'>
-    var mobileMenu = document.getElementById('mobile-menu-close')
-    if (mobileMenu) {
-        console.log({mobileMenu})
-        mobileMenu.addEventListener('click', menu)
-    }
-    var hamburgerMenu = document.getElementById('hamburger-menu')
-    if (hamburgerMenu) {
-        console.log({hamburgerMenu})
-        hamburgerMenu.addEventListener('click', menu)
-    }
+    document.getElementById('mobile-menu-close').addEventListener('click', menu)
+    document.getElementById('hamburger-menu').addEventListener('click', menu)
     function menu() {
         var mobileMenu = document.getElementById("mobile-menu");
         if (mobileMenu.style.display === "block") {
