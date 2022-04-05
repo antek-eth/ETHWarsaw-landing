@@ -20,6 +20,7 @@ a:hover {
   text-decoration: none; 
   color: #9291E4;
 }
+
 a:active { text-decoration: none; }
 
 .header-wrapper {
@@ -41,6 +42,39 @@ a:active { text-decoration: none; }
   padding-right: 100px;
 }
 
+.mobile-menu {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-bottom: 4px;
+}
+
+.hamburger-menu-wrapper {
+  display: none;
+  align-self: center;
+  justify-self: flex-end;
+  margin-right: 31px;
+}
+
+.mobile-menu-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #DAFCFE;
+}
+
+.mobile-menu-close-wrapper {
+  margin-right: 34px;
+  margin-top: 10px;
+}
+
+.mobile-menu-break {
+  height: 24px;
+  background: linear-gradient(180deg, #DAFCFE 0%, #FFFFFF 100%);
+}
+
 .section {
   display: flex;
   align-self: center;
@@ -54,6 +88,57 @@ a:active { text-decoration: none; }
   text-align: right;
   line-height: 120%;
 }
+
+
+.mobile-menu-section {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 120%;
+  /* or 26px */
+  
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: capitalize;
+  
+  color: #000000;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  justify-items: center;
+}
+
+.mobile-menu-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .header-wrapper {
+    justify-content: space-between;
+  }
+  
+  .logo-wrapper {
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+
+  .hamburger-menu-wrapper {
+    display: block;
+  }
+
+  .sections-wrapper {
+    display: none;
+  }
+
+  .mobile-menu {
+
+  }
+
+}
+
 
 .hero-section {
   display: flex;
