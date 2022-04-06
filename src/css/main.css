@@ -129,6 +129,7 @@ a:active { text-decoration: none; }
   justify-content: center;
   width: 100%;
   margin-top: -72px;
+  pointer-events: none;
 }
 
 .illustration {
