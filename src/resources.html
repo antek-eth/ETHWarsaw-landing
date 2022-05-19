@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Primary Meta Tags -->
+    <title>ETHWarsaw - Ethereum hackathon & conference - Sept 2022</title>
+    <meta name="title" content="ETHWarsaw - Ethereum hackathon & conference - Sept 2022">
+    <meta name="description" content="ETHWarsaw is a community led hackathon & conference in Warsaw. Join us in September 2022!">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ethwarsaw.dev/">
+    <meta property="og:title" content="ETHWarsaw - Ethereum hackathon & conference - Sept 2022">
+    <meta property="og:description" content="ETHWarsaw is a community led hackathon & conference in Warsaw. Join us in September 2022!">
+    <meta property="og:image" content="https://i.ibb.co/cJzcFTn/ethwarsaw.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ethwarsaw.dev/">
+    <meta property="twitter:title" content="ETHWarsaw - Ethereum hackathon & conference - Sept 2022">
+    <meta property="twitter:description" content="ETHWarsaw is a community led hackathon & conference in Warsaw. Join us in September 2022!">
+    <meta property="twitter:image" content="https://i.ibb.co/cJzcFTn/ethwarsaw.jpg">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/resources.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel='shortcut icon' type='image/svg+xml' href='./assets/favicon.svg' />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QF8QLL0EL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0QF8QLL0EL');
+    </script>
+
+</head>
+
+<body class="main">
+    <div class="header-wrapper">
+        <div class="logo-wrapper">
+            <a href="/">
+                <img class="logo" src="./assets/logo.svg" />
+            </a>
+        </div>
+        <div class="hamburger-menu-wrapper" id="hamburger-menu">
+            <img src="./assets/mobile-menu.svg" />
+        </div>
+        <div class="sections-wrapper">
+            <a href="#about" class="section">
+                About us
+            </a>
+            <a href="#meetup" class="section">
+                Meetup
+            </a>
+            <a href="./resources.html" class="section">
+                Resources
+            </a>
+            <a href="#contact" class="section">
+                Contact us
+            </a>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo-wrapper">
+                <a href="/">
+                    <img class="logo" src="./assets/logo.svg" />
+                </a>
+            </div>
+            <div class="mobile-menu-close-wrapper" id="mobile-menu-close">
+                <img class="mobile-menu-close" src="./assets/close.svg" />
+            </div>
+        </div>
+        <div class="mobile-menu-break"></div>
+        <div class="mobile-menu-section-wrapper">
+            <a href="#about">
+                <div class="mobile-menu-section">About us</div>
+            </a>
+            <a href="#meetup">
+                <div class="mobile-menu-section">Meetup</div>
+            </a>
+            <a href="#contact">
+                <div class="mobile-menu-section">Contact us</div>
+            </a>
+        </div>
+    </div>
+    <div class="bar"></div>
+    <div class="events-list-wrapper">
+        <a href="./april.html">
+            <div class="event-element">
+                <p class="event-element-text">meetup</p>
+                <p class="event-element-text event-element-date">april 27, 2022</p>
+            </div>
+        </a>
+        <div class="event-element event-element-soon">
+            <div class="event-element-soon-label">soon</div>
+            <p class="event-element-text">meetup</p>
+            <p class="event-element-text event-element-date">may 31, 2022</p>
+        </div>
+        <div class="event-element event-element-soon">
+            <div class="event-element-soon-label">soon</div>
+            <p class="event-element-text">meetup</p>
+            <p class="event-element-text event-element-date">june, 2022</p>
+        </div>
+        <div class="event-element event-element-soon">
+            <div class="event-element-soon-label">soon</div>
+            <p class="event-element-text">meetup</p>
+            <p class="event-element-text event-element-date">july, 2022</p>
+        </div>
+        <div class="event-element event-element-soon">
+            <div class="event-element-soon-label">soon</div>
+            <p class="event-element-text">conference & hackathon</p>
+            <p class="event-element-text event-element-date">september 1-4, 2022</p>
+        </div>
+        <div >
+            <img class="left-illustration" src="./assets/flying-balloon.svg"/>
+        </div>
+        <div class="bottom-illustration">
+            <img src="assets/university-illustration.svg"/>
+        </div>
+    </div>
+
+</body>
+
+<script type='text/javascript'>
+    document.getElementById('mobile-menu-close').addEventListener('click', menu)
+    document.getElementById('hamburger-menu').addEventListener('click', menu)
+    function menu() {
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (mobileMenu.style.display === "block") {
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+    }
+</script>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script
+    type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'NAME'; ftypes[1] = 'text'; fnames[6] = 'MESSAGE'; ftypes[6] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+
+</html>
