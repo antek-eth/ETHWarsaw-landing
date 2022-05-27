@@ -1,4 +1,7 @@
 .main {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
     background: white;
 }
 
@@ -174,7 +177,8 @@
 
 @media screen and (max-width: 576px) {
     .bar {
-        height: 25px;
+        height: 35px;
+        min-height: 35px;
     }
     
     .meetup-title {
