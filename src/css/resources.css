@@ -127,6 +127,7 @@
     }
 
     .bottom-illustration {
+        display: none;
         width: auto;
         position: absolute;
         left: 17.62%;
