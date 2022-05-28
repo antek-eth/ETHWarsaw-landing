@@ -11,6 +11,7 @@
 
 .bar {
     height: 55px;
+    min-height: 55px;
     width: 100%;
     background: linear-gradient(180deg, #DAFCFE 0%, #FFFFFF 100%);
 }
@@ -172,7 +173,8 @@
     display: flex;
     justify-content: center;
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 576px) {
